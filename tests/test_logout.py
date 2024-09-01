@@ -4,8 +4,8 @@ from locators import Locators
 from conftest import driver
 import time
 
-class TestGoToPersonalAccount:
-    def test_login_to_your_personal_account(self, driver):
+class TestLogout:
+    def test_logout(self, driver):
         WebDriverWait(driver, 10).until(
         expected_conditions.visibility_of_element_located(Locators.button_personal_account))
         driver.find_element(*Locators.button_personal_account).click()
