@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-import time
+
 
 class TestRegistration:
     def test_registration(self, driver):
@@ -14,7 +14,7 @@ class TestRegistration:
         driver.find_element(*Locators.input_password).send_keys('281077')
         driver.find_element(*Locators.button_register_2).click()
         assert driver.find_element(*Locators.button_register_2).is_displayed()
-        time.sleep(3)
+
 
 
 

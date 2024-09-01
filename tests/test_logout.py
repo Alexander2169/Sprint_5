@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-import time
+
 
 class TestLogout:
     def test_logout(self, driver):
@@ -17,6 +17,6 @@ class TestLogout:
         driver.find_element(*Locators.button_logout).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_login))
         assert driver.find_element(*Locators.button_login).is_displayed()
-        time.sleep(3)
+
 
 

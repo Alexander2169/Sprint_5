@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-import time
+
 
 class TestNavigateToConstructor:
     def test_personal_account_transition_by_clicking_on_the_constructor(self, driver):
@@ -15,4 +15,3 @@ class TestNavigateToConstructor:
         driver.find_element(*Locators.button_constructor_main_page).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_constructor_main_page))
         assert driver.find_element(*Locators.button_constructor_main_page).is_displayed()
-        time.sleep(3)

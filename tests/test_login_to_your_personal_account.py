@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-import time
+
 class TestEntrance:
     def test_login_to_your_personal_account(self, driver):
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_personal_account))
@@ -12,4 +12,4 @@ class TestEntrance:
         driver.find_element(*Locators.button_login).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_login))
         assert driver.find_element(*Locators.button_login).is_displayed()
-        time.sleep(3)
+
