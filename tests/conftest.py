@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from config import BASE_URL
+from data import UsersTestData
 @pytest.fixture()
 def driver():
     chrome_options = webdriver.ChromeOptions()
