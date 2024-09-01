@@ -4,3 +4,7 @@ __pycache__/
 __pycache__
 .idea/.gitignore
 .idea/Sprint_5.iml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
