@@ -10,4 +10,4 @@ class TestRegistration:
         driver.find_element(*Locators.input_password).send_keys('28')
         driver.find_element(*Locators.button_register_2).click()
         assert driver.find_element(*Locators.message_incorrect_password).text == 'Некорректный пароль'
-        time.sleep(5)
+        time.sleep(3)

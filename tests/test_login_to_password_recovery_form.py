@@ -16,4 +16,4 @@ class TestEntrance:
         driver.find_element(*Locators.button_login).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_login))
         assert driver.find_element(*Locators.button_login).is_displayed()
-        time.sleep(5)
+        time.sleep(3)

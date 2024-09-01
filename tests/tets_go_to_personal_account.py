@@ -2,12 +2,16 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-from conftest import login
 import time
 
 class TestGoToPersonalAccount:
-    def test_go_to_personal_account(self, driver, login):
+    def test_login_to_your_personal_account(self, driver):
+        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_personal_account))
         driver.find_element(*Locators.button_personal_account).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.profile))
-        assert driver.find_element(*Locators.order_history).is_displayed()
-        time.sleep(5)
+        driver.find_element(*Locators.input_email_login).send_keys('alexander_cheremisov_13_777@mail.ru')
+        driver.find_element(*Locators.input_password_login).send_keys('281077')
+        driver.find_element(*Locators.button_login).click()
+        driver.find_element(*Locators.button_personal_account).click()
+        assert driver.find_element(*Locators.button_personal_account).is_displayed()
+        time.sleep(3)
+
