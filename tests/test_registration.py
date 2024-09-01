@@ -5,7 +5,7 @@ from conftest import driver
 import time
 
 class TestRegistration:
-    def test_registration_new_account(self, driver):
+    def test_registration(self, driver):
         driver.find_element(*Locators.button_login_main_page).click()
         WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_register_1))
         driver.find_element(*Locators.button_register_1).click()

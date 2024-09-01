@@ -2,7 +2,7 @@ from locators import Locators
 from conftest import driver
 import time
 class TestRegistration:
-    def test_registration_new_account_success_submit(self, driver):
+    def test_incorrect_password(self, driver):
         driver.find_element(*Locators.button_login_main_page).click()
         driver.find_element(*Locators.button_register_1).click()
         driver.find_element(*Locators.input_name).send_keys('alexander_cheremisov')
