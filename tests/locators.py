@@ -10,32 +10,32 @@ class Locators:
     input_password = (By.XPATH, '//input[@name="Пароль"]')
 
     # Кнопка "Зарегистрироваться" на форме «Регистрация»
-    button_submit = (By.XPATH, '//button[text()="Зарегистрироваться"]')
+    button_register_2 = (By.XPATH, '//button[text()="Зарегистрироваться"]')
 
-    # Сообщение о некорректном пароле на форме «Регистрация»    notification_incorrect_password = (By.XPATH, '//p[text()="Некорректный пароль"]')
+    # Сообщение о некорректном пароле на форме «Регистрация»
+    message_incorrect_password = (By.XPATH, '//p[text()="Некорректный пароль"]')
 
     # Кнопка "Войти" на форме «Регистрация»
-    button_login_in_registration_form = (By.XPATH, '//a[text()="Войти"]')
+    button_login_in_registration = (By.XPATH, '//a[text()="Войти"]')
 
     # Поле Email на форме «Вход»
-    input_email_auth = (By.XPATH, '//label[text()="Email"]/following-sibling::input')
+    input_email_login = (By.XPATH, '//label[text()="Email"]/following-sibling::input')
 
     # Поле "Пароль" на форме «Вход»
-    input_password_auth = (By.XPATH, '//input[@name="Пароль"]')
+    input_password_login = (By.XPATH, '//input[@name="Пароль"]')
 
     # Кнопка "Войти" на форме «Вход»
     button_login = (By.XPATH, '//button[text()="Войти"]')
 
     # Кнопка "Зарегистрироваться" на форме «Вход»
-    button_register = (By.XPATH, '//a[text()="Зарегистрироваться"]')
+    button_register_1 = (By.XPATH, '//a[text()="Зарегистрироваться"]')
 
     # Кнопка "Восстановить пароль" на форме «Вход»
-    button_forgot_password = (By.XPATH, '//a[text()="Восстановить пароль"]')
+    button_recover_password = (By.XPATH, '//a[text()="Восстановить пароль"]')
 
     # Кнопка "Войти" в форме восстановления пароля
-    button_login_passwd_recovery_form = (By.XPATH, '//a[text()="Войти"]')
+    button_login_recover_password = (By.XPATH, '//a[text()="Войти"]')
 
-    # Личный кабинет
     # Раздел "Профиль" на странице «Личный кабинет»
     profile = (By.XPATH, '//a[@href="/account/profile"]')
 
@@ -43,22 +43,22 @@ class Locators:
     button_logout = (By.XPATH, '//button[@type="button"]')
 
     # Кнопка "Войти в аккаунт" на главной странице сервиса
-    button_login_in_main = (By.XPATH, '//button[text()="Войти в аккаунт"]')
+    button_login_main_page = (By.XPATH, '//button[text()="Войти в аккаунт"]')
 
     # Кнопка "Личный кабинет" на главной странице сервиса
     button_personal_account = (By.XPATH, '//p[text()="Личный Кабинет"]')
 
     # Кнопка "Конструктор" на главной странице сервиса
-    header_of_page_constructor = (By.XPATH, '//p[text()="Конструктор"]')
+    button_constructor_main_page = (By.XPATH, '//p[text()="Конструктор"]')
 
     # Раздел "Булки" на форме «Конструктор»
-    buns_block = (By.XPATH, '//span[text()="Булки"]')
+    buns_section = (By.XPATH, '//span[text()="Булки"]')
 
     # Раздел "Соусы" на форме «Конструктор»
-    sauces_block = (By.XPATH, '//span[text()="Соусы"]')
+    sauces_section = (By.XPATH, '//span[text()="Соусы"]')
 
     # Раздел "Начинки" на форме «Конструктор»
-    fillings_block = (By.XPATH, '//span[text()="Начинки"]')
+    fillings_section = (By.XPATH, '//span[text()="Начинки"]')
 
     # Логотип на главной странице сервиса
     logo = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]')
