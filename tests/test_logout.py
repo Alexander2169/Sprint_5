@@ -6,8 +6,6 @@ from conftest import driver
 
 class TestLogout:
     def test_logout(self, driver):
-        WebDriverWait(driver, 10).until(
-        expected_conditions.visibility_of_element_located(Locators.button_personal_account))
         driver.find_element(*Locators.button_personal_account).click()
         driver.find_element(*Locators.input_email_login).send_keys('alexander_cheremisov_13_777@mail.ru')
         driver.find_element(*Locators.input_password_login).send_keys('281077')

@@ -10,6 +10,5 @@ class TestEntrance:
         driver.find_element(*Locators.input_email_login).send_keys('alexander_cheremisov_13_777@mail.ru')
         driver.find_element(*Locators.input_password_login).send_keys('281077')
         driver.find_element(*Locators.button_login).click()
-        WebDriverWait(driver, 10).until(expected_conditions.visibility_of_element_located(Locators.button_login))
         assert driver.find_element(*Locators.button_login).is_displayed()
 
