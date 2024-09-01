@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-class TestLocators:
+class Locators:
     # Поле "Имя" на форме «Регистрация»
     input_name = (By.XPATH, '//label[text()="Имя"]/following-sibling::input')
 
