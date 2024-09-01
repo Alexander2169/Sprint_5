@@ -45,10 +45,10 @@ class Locators:
     # Кнопка "Войти в аккаунт" на главной странице сервиса
     button_login_main_page = (By.XPATH, '//button[text()="Войти в аккаунт"]')
 
-    # Кнопка "Личный кабинет" на главной странице сервиса
+    # Кнопка "Личный кабинет"
     button_personal_account = (By.XPATH, '//p[text()="Личный Кабинет"]')
 
-    # Кнопка "Конструктор" на главной странице сервиса
+    # Кнопка "Конструктор"
     button_constructor_main_page = (By.XPATH, '//p[text()="Конструктор"]')
 
     # Раздел "Булки" на форме «Конструктор»
@@ -62,4 +62,7 @@ class Locators:
 
     # Логотип на главной странице сервиса
     logo = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]')
+
+    # Раздел "История заказов"
+    order_history = By.XPATH, '//a[@href = "/account/order-history"]'
 
