@@ -63,6 +63,5 @@ class Locators:
     # Логотип на главной странице сервиса
     logo = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]')
 
-    # Раздел "История заказов"
-    order_history = By.XPATH, '//a[@href = "/account/order-history"]'
+
 
