@@ -1,8 +1,5 @@
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-
 
 class TestNavigateToConstructor:
     def test_personal_account_transition_by_logo(self, driver):

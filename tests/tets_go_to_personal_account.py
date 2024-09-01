@@ -1,8 +1,5 @@
-from selenium.webdriver.support import expected_conditions
-from selenium.webdriver.support.ui import WebDriverWait
 from locators import Locators
 from conftest import driver
-
 
 class TestGoToPersonalAccount:
     def test_login_to_your_personal_account(self, driver):
