@@ -61,7 +61,7 @@ class Locators:
     fillings_section = (By.XPATH, '//span[text()="Начинки"]')
 
     # Логотип на главной странице сервиса
-    logo = (By.XPATH, '//div[@class="AppHeader_header__logo__2D0X2"]')
+    logo = (By.XPATH, '//div[contains(@class, "AppHeader_header__logo")]')
 
     # Активный раздел конструктора
     selected_button = (By.XPATH, '//div[@class="tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect"]')
