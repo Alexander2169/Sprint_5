@@ -1,4 +1,4 @@
 .gitignore.py
 .idea
 __pycache__
-
+.idea/.gitignore
