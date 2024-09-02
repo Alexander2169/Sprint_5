@@ -58,7 +58,7 @@ cover/
 # Translations
 *.mo
 *.pot
-
+.idea/Sprint_5.iml
 # Django stuff:
 *.log
 local_settings.py
