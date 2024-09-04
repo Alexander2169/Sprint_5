@@ -58,7 +58,7 @@ class Locators:
     sauces_section = (By.XPATH, '//span[text()="Соусы"]')
 
     # Раздел "Начинки" на форме «Конструктор»
-    fillings_section = (By.XPATH, '//span[text()="Начинки"]')
+    fillings_section = By.XPATH, '//span[text()="Начинки"]'
 
     # Логотип на главной странице сервиса
     logo = (By.XPATH, '//div[contains(@class, "AppHeader_header__logo")]')
