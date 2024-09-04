@@ -1,6 +1,7 @@
 from locators import Locators
 from conftest import driver
 from helpers import get_sign_up_data
+
 class TestRegistration:
     def test_incorrect_password(self, driver):
         name_data, email_data, password_data = get_sign_up_data()
