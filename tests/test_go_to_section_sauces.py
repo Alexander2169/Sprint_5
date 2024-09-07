@@ -10,3 +10,4 @@ class TestGoToSection:
         driver.find_element(*Locators.sauces_section).click()
         assert driver.find_element(*Locators.selected_button).text == "Соусы"
 
+
