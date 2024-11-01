@@ -1,4 +1,4 @@
-from locators import Locators
+from locators import *
 from conftest import driver
 from helpers import get_sign_up_data
 
